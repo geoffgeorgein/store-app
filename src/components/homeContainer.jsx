@@ -22,7 +22,7 @@ const HomeContainer = () => {
   return (
     <div className="p-4 mt-20 flex  justify-center flex-wrap">
       {
-        data.map((item)=>{
+        data?.map((item)=>{
 
           return(<Product key={item.id} name={item.title} price={item.price} desc={item.description} rating={item.rating} url={item.image} />)
           
