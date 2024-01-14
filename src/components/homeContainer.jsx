@@ -20,7 +20,7 @@ const HomeContainer = () => {
     fetchData();
 },[])
   return (
-    <div className="p-4 mt-20 flex items-center justify-center flex-wrap">
+    <div className="p-4 mt-20 flex  justify-center flex-wrap">
       {
         data.map((item)=>{
 
