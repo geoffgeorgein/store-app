@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import CartContext from "../cartContext";
+import { Link } from "react-router-dom";
 
 const Product = ({ name, price, desc, rating, url,id }) => {
 
@@ -16,7 +17,8 @@ const Product = ({ name, price, desc, rating, url,id }) => {
 
   return (
     <div className="p-4 m-6 max-w-40 h-42 text-left flex flex-col justify-between">
-      <img src={url} className="mb-4"></img>
+    <Link to={`/product/${id}`}><img src={url} className="mb-4" ></img></Link>
+      
       <h2 className="text-gray-500">{name}</h2>
 
       {/* <p>{desc}</p> */}

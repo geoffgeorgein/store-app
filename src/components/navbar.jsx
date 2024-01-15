@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="rightC flex items-center">
         {username && (
           <>
-            <h2 className="pr-1">{username}</h2>
+            <h2 className="pr-1">{username.slice(0,6)}</h2>
             <button onClick={logout}>Log Out</button>
           </>
         )}
