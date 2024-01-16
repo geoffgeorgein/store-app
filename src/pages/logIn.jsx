@@ -11,7 +11,7 @@ const LogIn = () => {
   const { setUserInfo } = useContext(UserContext);
   async function login(ev) {
     ev.preventDefault();
-    const response = await fetch("http://localhost:5000/login", {
+    const response = await fetch("https://store-api-i2qb.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
@@ -46,7 +46,7 @@ const LogIn = () => {
             className="pass border-gray-700 border-1 mb-5"
             onChange={(ev) => setPassword(ev.target.value)}
           ></input>
-          <button className="bg-blue-500 rounded-md" type="submit">LOG IN</button>
+          <button className="bg-blue-500 rounded-md p-2 px-3 text-white" type="submit">LOG IN</button>
         </form>
       </div>
     </div>

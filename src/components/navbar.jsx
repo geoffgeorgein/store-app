@@ -30,24 +30,24 @@ const Navbar = () => {
   return (
     <div className="navbar w-full max-w-[1100px] mx-auto   absolute flex top-0 p-2 items-center justify-between mr-4 pr-8 z-10">
       <Link to={"/"}>
-        <div className="logo"> Store</div>
+        <div className="logo text-2xl text-blue-600 font-bold"> Store</div>
       </Link>
 
       <div className="rightC flex items-center">
         {username && (
           <>
             <h2 className="pr-1">{username.slice(0,6)}</h2>
-            <button onClick={logout}>Log Out</button>
+            <button onClick={logout} className="p-1 px-2 border-2 border-slate-400 rounded-md mx-2">Log Out</button>
           </>
         )}
         {!username && (
           <>
             <Link to={"/login"}>
               {" "}
-              <button className="mr-1 p-1">Login</button>
+              <button className="mr-1 p-1 px-2 border-2 border-slate-400 rounded-md ">Login</button>
             </Link>
             <Link to={"/signup"}>
-              <button className="mr-2 p-1">Signup</button>
+              <button className="mr-2 p-1 px-2 border-2 border-slate-400 rounded-md mx-2">Signup</button>
             </Link>
           </>
         )}

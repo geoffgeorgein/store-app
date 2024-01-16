@@ -8,7 +8,7 @@ const SignUp = () => {
 
   async function register(ev) {
     ev.preventDefault();
-    const response = await fetch("http://localhost:5000/signup", {
+    const response = await fetch("https://store-api-i2qb.onrender.com/signup", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
@@ -41,7 +41,7 @@ const SignUp = () => {
             className="pass border-gray-700 border-1"
             onChange={(ev) => setPassword(ev.target.value)}
           ></input>
-           <button className="bg-blue-500 rounded-md" type="submit">SIGN UP</button>
+           <button className="bg-blue-500 rounded-md p-2 px-2 mt-2 text-white" type="submit">SIGN UP</button>
         </form>
       </div>
     </div>
