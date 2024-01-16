@@ -23,7 +23,7 @@ const SignUp = () => {
     }
   }
   return (
-    <div className="signUp mt-14  flex items-center justify-center">
+    <div className="signUp mt-24  flex items-center justify-center">
       <div className="container flex flex-col max-w-40 justify-center">
         <form onSubmit={register}>
           <h2 className="text-bold mb-6">Sign Up</h2>
@@ -33,12 +33,14 @@ const SignUp = () => {
           ></input> */}
           <input
             type="email"
-            className="email border-gray-700 border-1 mb-4"
+            className="email border-gray-700 border-1 mb-4 mt-2 bg-slate-200"
+            placeholder="username"
             onChange={(ev) => setUsername(ev.target.value)}
           ></input>
           <input
             type="password"
-            className="pass border-gray-700 border-1"
+            className="pass border-gray-700 border-1 bg-slate-200 mb-3 "
+            placeholder="password"
             onChange={(ev) => setPassword(ev.target.value)}
           ></input>
            <button className="bg-blue-500 rounded-md p-2 px-2 mt-2 text-white" type="submit">SIGN UP</button>

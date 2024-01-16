@@ -28,7 +28,7 @@ const Navbar = () => {
     console.log(numberofCartItems);
 
   return (
-    <div className="navbar w-full max-w-[1100px] mx-auto   absolute flex top-0 p-2 items-center justify-between mr-4 pr-8 z-10">
+    <div className="navbar w-full max-w-[1100px] mx-auto   absolute flex top-0 p-1 items-center justify-between mr-4 pr-8 z-10">
       <Link to={"/"}>
         <div className="logo text-2xl text-blue-600 font-bold"> Store</div>
       </Link>
