@@ -38,13 +38,13 @@ const LogIn = () => {
 
           <input
             type="email"
-            className="email border-gray-700 border-1 mb-4"
+            className="email border-gray-700 border-1 mb-4 bg-slate-400"
             onChange={(ev) => setUsername(ev.target.value)}
           ></input>
           <input
             type="password"
-            className="pass border-gray-700 border-1 mb-5"
-            onChange={(ev) => setPassword(ev.target.value)}
+            className="pass border-gray-700 border-1 mb-5 bg-slate-400"
+            onChange={(ev) => setPassword(ev.target.value) }
           ></input>
           <button className="bg-blue-500 rounded-md p-2 px-3 text-white" type="submit">LOG IN</button>
         </form>
