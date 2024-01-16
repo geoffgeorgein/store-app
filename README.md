@@ -1,7 +1,7 @@
 # Store-app
 
 
-Live link: [https://web-pdf-one.vercel.app/](https://store-app-tau-seven.vercel.app/)
+Live link: https://store-app-tau-seven.vercel.app/
 
 #### Instructions for using locally
 
